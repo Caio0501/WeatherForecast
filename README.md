@@ -1,5 +1,5 @@
 <header>
-  <div align="center" ><img src="./img/Logo.png" alt="logo" style=" width="150" height="150"/></div>
+  <div align="center" ><img src="./img/logo.png" alt="logo" style=" width="150" height="150"/></div>
   <h1 align="center"> Weather Search</h1>
   <p align="center"> 
     <strong>
