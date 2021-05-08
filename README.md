@@ -1,4 +1,4 @@
-</header>
+<header>
   <div align="center" ><img src="./img/clima.svg" alt="logo" style=" width="150" height="150"/></div>
   <h1 align="center"> Weather Search</h1>
   <p align="center"> 
@@ -7,19 +7,12 @@
       <a href="https://openweathermap.org">openweathermap.org</a> utilizando do framework Angular. Inicialmente a primeira versão projeto foi feita para uma entrevista de             emprego usando de um protótipo disponibilizado pela <a href="https://www.actionlabs.com.br/">www.actionlabs.com.br</a> mas com o passar do tem tive a vontade de recriar         esse projeto utilizando de um protótipo feito por min a fim de me aprofundar nos estudos 
     </strong> 
   </p>
-  <h2>Forecast V1</h2>
+  <h2 align="center">Forecast V1</h2>
   <p align="center"> 
     <a href="#status_v1">Status do projeto</a> •
     <a href="#preview">Preview</a> •
     <a href="#instalacao">Instalação</a> •
     <a href="#tecnologias">Tecnologias</a> •
-  </p>
-  <h2>Forecast V2</h2>
-  <p align="center"> 
-    <a href="#status_v2">Status do projeto</a> •
-    <a href="#preview_v2">Preview</a> •
-    <a href="#instalacao_v2">Instalação</a> •
-    <a href="#tecnologias_v2">Tecnologias</a> •
   </p>
   <hr/>
 </header>
@@ -56,3 +49,13 @@
     </ul>
   </div>
 </main>
+<section>
+  <h2 align="center">Forecast V2</h2>
+  <p align="center"> 
+    <a href="#status_v2">Status do projeto</a> •
+    <a href="#preview_v2">Preview</a> •
+    <a href="#instalacao_v2">Instalação</a> •
+    <a href="#tecnologias_v2">Tecnologias</a> •
+  </p>
+</section>
+
