@@ -1,0 +1,73 @@
+<div class="main">
+    <strong><i class="fas fa-arrow-left" (click)="back()"></i></strong>
+    <div class="searchBox">
+        <input type="text" placeholder="Your city name" [(ngModel)]="searchCity">
+        <i class=" fas fa-search" (click)="search(searchCity)"></i>
+    </div>
+</div>
+
+<div *ngIf="dataWeather != null">
+    <p class="txTitle">{{dataWeather?.name}}, {{dataWeather?.sys.country}}</p>
+    <p class="subTitle">{{dataWeather?.dt * 1000 | date:'H:mm - dd/MM' }}</p>
+</div>
+
+<div class="mainCard" *ngIf="dataWeather != null">
+    <div class="grid">
+        <div class="container">
+            <div class="infoTemp">
+                <b>{{dataWeather?.main.temp}}°C</b>
+            </div>
+            <div class="imgContainer">
+                <img [src]="getIcon(dataWeather?.weather[0].icon)" alt="icon weather">
+                <div>
+                    <p>{{dataWeather?.weather[0].description}}</p>
+                </div>
+            </div>
+        </div>
+        <section>
+            <div class="infoStats">
+                <ol>
+                    <br>
+                    <ul>Máx:</ul>
+                    <br>
+                    <ul>Mín:</ul>
+                    <br>
+                    <ul>Sunrise</ul>
+                    <br>
+                    <ul>Sunset</ul>
+                    <br>
+                </ol>
+                <ol>
+                    <br>
+                    <ul><strong class="max">{{dataWeather?.main.temp_max}}°C</strong></ul>
+                    <br>
+                    <ul><strong class="min">{{dataWeather?.main?.temp_min}}°C</strong></ul>
+                    <br>
+                    <ul><label>{{dataWeather?.sys.sunrise * 1000 | date:'H:mm'}}</label></ul>
+                    <br>
+                    <ul><label>{{dataWeather?.sys.sunset * 1000 | date:'H:mm'}}</label></ul>
+                    <br>
+                </ol>
+            </div>
+        </section>
+    </div>
+    <section>
+        <h3 style="padding-left: 15px;">5 day weather forecast</h3>
+        <div *ngFor="let item of daysList" class="gridDays">
+            <div class="infoDate">
+                <p class="txTitle">{{item?.dt * 1000| date:'dd/MM' }}</p>
+                <p class="subTitle">{{item?.dt * 1000| date:'H:mm' }}</p>
+            </div>
+            <div class="infoWeather">
+                <img [src]="getForecastIcon(item?.weather[0].icon)" alt="icon weather">
+                <p>{{item?.weather[0].description}}</p>
+            </div>
+            <div class="infoStatus">
+                <ul>
+                    <b class="max">{{item?.main.temp_max}}°C</b>
+                    <b class="min">{{item?.main.temp_min}}°C</b>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>

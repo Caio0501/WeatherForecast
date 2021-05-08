@@ -1,0 +1,29 @@
+<div class="card" (click)="moreInfo()">
+    <div class="cardGrid">
+        <div class="cardTemp">
+            <b>{{data.main.temp}}°C</b>
+        </div>
+        <section>
+            <div class="cardText">
+                <b>{{data.name}}, {{data.sys.country}}</b>
+                <img [src]="getflag(this.data?.sys.country)" alt="flag">
+            </div>
+            <div class="cardStats">
+                <ol>
+                    <ul>Máx:</ul>
+                    <ul>Mín:</ul>
+                </ol>
+                <ol>
+                    <ul><strong class="max">{{data.main.temp_max}}°C</strong></ul>
+                    <ul><strong class="min">{{data.main.temp_min}}°C</strong></ul>
+                </ol>
+            </div>
+        </section>
+        <div class="cardImage">
+            <img [src]="getIcon(data?.weather[0].icon)" alt="icon weather">
+            <div>
+                <p>{{data.weather[0].description}}</p>
+            </div>
+        </div>
+    </div>
+</div>

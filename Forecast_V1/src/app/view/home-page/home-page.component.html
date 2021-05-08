@@ -1,0 +1,19 @@
+<main class="main">
+    <p class="txTitle">WEATHER IN YOUR CITY</p>
+    <div class="searchBox">
+        <input type="text" placeholder="Your city name" [(ngModel)]="searchCity">
+        <i class=" fas fa-search" (click)="search(searchCity)"></i>
+    </div>
+    <div class="alert" *ngIf="loadErro">
+        <span class="closebtn" (click)="closeAlert()">&times;</span>
+        <strong>Warning!!</strong> {{message}}
+    </div>
+</main>
+
+
+
+<div class="display" *ngIf="searchResult != null">
+    <div *ngFor="let item of searchResult">
+        <app-card-city [data]="item"></app-card-city>
+    </div>
+</div>

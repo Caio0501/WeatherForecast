@@ -1,0 +1,62 @@
+.card {
+	height: 100%;
+	width: auto;
+	padding: 2px;
+	border-radius: 5px;
+	background: #fff;
+	box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.397);
+}
+
+.cardGrid{
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-areas: "temp" "text" "status" "image";
+	grid-template-columns: 1fr 2fr 1fr;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+.cardTemp {
+	grid-area: "temp";
+	margin: 10px;
+	background-color: #f6f6f6;
+	padding-top: 25px;
+	font-size: 24px;
+	text-align: center;
+	color: #3c3c3c;
+}
+
+.cardText {
+	grid-area: "text";
+	font-size: 24px;
+	color: #39a3db;
+	padding: 10px 0px;
+}
+
+.cardText img {
+	padding: 3px 10px;
+}
+
+.cardStats {
+	grid-area: "status";
+	display: grid;
+	padding: 10px 0px;
+	grid-template-areas: "max" "min";
+	grid-template-columns: 1fr 3fr;
+}
+
+.max {
+	grid-area: "max";
+	color: red;
+}
+
+.min {
+	grid-area: "min";
+	color: #39a3db;
+}
+
+.cardImage {
+	padding: 10px 0px;
+	margin: 0px 10px 2px ;
+	text-align: center;
+}

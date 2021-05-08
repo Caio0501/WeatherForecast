@@ -1,0 +1,91 @@
+.main {
+	max-width: auto;
+	padding: 100px 0px;
+	background: #39a3db;
+}
+ 
+.txTitle {
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;
+}
+
+.searchBox {
+	max-width: 500px;
+	margin: 20px auto 0;
+	position: relative;
+}
+
+.searchBox input {
+	width: 100%;
+	padding: 10px;
+	padding-right: 60px;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	outline: none;
+	box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.397);
+}
+
+.fa-search {
+	position: absolute;
+	top: 50%;
+	right: 0px;
+	transform: translateY(-50%);
+	font-size: 20px;
+	color: #39a3db;
+}
+
+i {
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+
+i:hover {
+	background-color: #f6f6f6;
+	font-size: 25px;
+	padding: 5px 15px;
+}
+
+.display {
+	height: 20px;
+	width: 700px;
+	margin: -75px auto 0;
+	position: relative;
+}
+
+.display div {
+	padding: 10px;
+} 
+
+.alert {
+	position: absolute; 
+	top: 30px; 
+	left: 20px; 
+	right: 20px;
+  padding: 20px;
+  background-color: #ff9800;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}

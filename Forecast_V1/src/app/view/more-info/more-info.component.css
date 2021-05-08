@@ -1,0 +1,214 @@
+.main {
+	max-width: auto;
+	margin: 0px auto 0;
+	padding: 20px 0px;
+	background: #39a3db;
+}
+
+.searchBox {
+	width: 400px;
+	margin: 0 auto 0;
+	position: relative;
+}
+
+@media (max-width: 600px) {
+	.searchBox {
+		width: 200px;
+	}
+}
+
+.searchBox input {
+	width: 100%;
+	padding: 10px;
+	padding-right: 60px;
+	box-sizing: border-box;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	outline: none;
+	box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.397);
+}
+
+.fa-search {
+	position: absolute;
+	top: 50%;
+	right: 0px;
+	transform: translateY(-50%);
+	font-size: 20px;
+	color: #39a3db;
+}
+
+i {
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+
+.searchBox i:hover {
+	background-color: #f6f6f6;
+	font-size: 25px;
+	padding: 5px 15px;
+}
+
+.fa-arrow-left {
+	position: absolute;
+	left: 10px;
+	font-size: 20px;
+	color: #fff;
+}
+
+strong i:hover {
+	background-color: #226dc4;
+	font-size: 25px;
+	padding: 5px 15px;
+}
+
+
+.mainCard {
+	height: 100%;
+	width: 700px;
+	margin: 30px auto 0;
+	position: relative;
+	border-radius: 5px;
+	background: #fff;
+	box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.397);
+}
+
+.grid {
+	display: grid;
+	padding: 2px;
+	grid-template-rows: auto;
+	grid-template-areas: "temp" "text" "status";
+	grid-template-columns: 2fr 3fr;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	grid-area: "temp";
+	margin: 10px;
+	padding-top: 25px;
+	font-size: 24px;
+	text-align: center;
+	background-color: #f6f6f6;
+	color: #3c3c3c;
+}
+
+.imgContainer {
+	height: 70%;
+	background-color: #fff;
+}
+
+.infoTemp {
+	height: 30%;
+}
+
+.infoStats {
+	grid-area: "status";
+	display: grid;
+	grid-template-areas: "max" "min";
+	grid-template-columns: 1fr 3fr;
+}
+
+.max {
+	grid-area: "max";
+	color: red;
+}
+
+.min {
+	grid-area: "min";
+	color: #39a3db;
+}
+
+section .infoStats {
+	margin: 10px;
+}
+
+.txTitle {
+	width: auto;
+	margin-top: 10px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	font-size: 28px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.subTitle {
+	width: auto;
+	height: 20px;
+	margin-top: 5px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000000;
+}
+
+.infoStats ul {
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+	border-color: #dfdddd;
+	padding: 5px;
+}
+
+.gridDays {
+  display: grid;
+  grid-template-rows: 50;
+  grid-template-areas: "date" "weather" "status";
+  grid-template-columns: 1fr 2fr 1fr;
+  font-family: 'Roboto', sans-serif;
+	margin: 10px;
+	
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+	border-color: #dfdddd;
+	padding: 5px;
+
+}
+
+.infoDate {
+  grid-area: "date";
+  margin: 10px;
+  text-align: center;
+  color: #3c3c3c;
+}
+
+.infoWeather {
+	grid-area: "weather";
+  margin: 10px;
+	background-color: #fff;
+	display: grid;
+	grid-template-areas: "img" "value";
+	grid-template-columns: 1fr 2fr;
+}
+
+.infoWeather img {
+	padding-top: 15px;
+	grid-area: "img";
+	text-align: center;
+}
+
+.infoWeather p {
+	grid-area: "value";
+	padding-top: 30px;
+}
+
+.infoStatus {
+  grid-area: "status";
+  margin: 10px;
+  padding-top: 30px;
+  text-align: center;
+  color: #3c3c3c;
+}
+
+.infoStatus b{
+	margin: 0px 5px 0px 5px;
+}
