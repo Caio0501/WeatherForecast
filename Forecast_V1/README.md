@@ -1,5 +1,4 @@
 </header>
-  <div align="center" ><img src="./img/clima.svg" alt="logo" style=" width="150" height="150"/></div>
   <h1 align="center"> Weather Search</h1>
   <p align="center"> 
     <strong>Projeto criado a partir de um protótipo disponibilizado pela Action Labs <a href="https://www.actionlabs.com.br/">www.actionlabs.com.br</a>. 
@@ -24,7 +23,7 @@
   </div>
   <div id="preview">
     <h3 align="center">Preview</h3>
-    <img src="./img/Preview.gif">
+    <img src="../img/Preview.gif">
   </div>
   <div id="instalacao">
     <h3 align="center">Instalação</h3>
