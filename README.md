@@ -2,9 +2,10 @@
   <div align="center" ><img src="./img/clima.svg" alt="logo" style=" width="150" height="150"/></div>
   <h1 align="center"> Weather Search</h1>
   <p align="center"> 
-    <strong>Projeto criado a partir de um protótipo disponibilizado pela Action Labs <a href="https://www.actionlabs.com.br/">www.actionlabs.com.br</a>. 
-    tendo como ideia criar um sistema de pesquisa de clima por cidade consumindo uma API fornecida pela OpenWeather
- <a href="https://openweathermap.org">openweathermap.org</a> </strong> 
+    <strong>
+      Este repositório foi criado a partir da ideia de criar uma aplicação Web consumindo uma API fornecida pela OpenWeather
+      <a href="https://openweathermap.org">openweathermap.org</a> utilizando do framework Angular. Inicialmente a primeira versão projeto foi feita para uma entrevista de             emprego usando de um protótipo disponibilizado pela <a href="https://www.actionlabs.com.br/">www.actionlabs.com.br</a> mas com o passar do tem tive a vontade de recriar         esse projeto utilizando de um protótipo feito por min a fim de me aprofundar nos estudos 
+    </strong> 
   </p>
   <p align="center"> 
   <a href="#status">Status do projeto</a> •
