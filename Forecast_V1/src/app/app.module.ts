@@ -23,7 +23,6 @@ import { MoreInfoComponent } from './view/more-info/more-info.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-
   ],
   providers: [
     WatherMapService,
