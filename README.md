@@ -38,8 +38,11 @@
   <ul><li>Front-end</li></ul>
 
     # Clone the repository
-    $ https://github.com/Caio0501/Weather-search.git
-    
+    $ https://github.com/Caio0501/WeatherForecast.git
+
+    # Enter the Forecast_V1 directory
+    $ cd ./Forecast_V1/
+
     # Install all the dependencies
     $ npm install
 
