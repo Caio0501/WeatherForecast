@@ -25,7 +25,4 @@ export class WatherMapService {
   public getForecast(value): Observable<Forecast> {
     return this.http.get<Forecast>(`http://api.openweathermap.org/data/2.5/forecast?q=${value}&appid=${this.apikey}&units=metric`);
   }
-
-
-
 }

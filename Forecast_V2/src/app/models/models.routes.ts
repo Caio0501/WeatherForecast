@@ -1,7 +1,7 @@
 import { Routes } from "@angular/router";
-import { ResearchComponent } from "./research/research.component";
+import { HomeComponent } from "./home/home.component";
 
 export const ModelsRouter: Routes = [
-  { path: '', component: ResearchComponent },
+  { path: '', component: HomeComponent },
 ];
 

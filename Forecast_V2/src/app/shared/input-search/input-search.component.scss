@@ -1,11 +1,9 @@
-
 @import "../../../assets/styles/styles.scss";
 
 $fill: rgba(0, 0, 0, 0.5);
 $border-radius: 10px;
 $width: 50rem;
 $height: 55px;
-
 
 .search {
   background: $white;
@@ -14,13 +12,12 @@ $height: 55px;
   position: relative;
   overflow: hidden;
   border-radius: $border-radius;
-  box-shadow: 0 10px 30px rgba($gray, 0.05);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
 
   input {
-
     position: relative;
     width: $height;
     height: $height;
@@ -35,12 +32,10 @@ $height: 55px;
     cursor: pointer;
 
     &:focus {
-
       z-index: 0;
       opacity: 1;
       width: $width;
       ~ .symbol {
-
         &::before {
           width: 0%;
         }
@@ -55,7 +50,7 @@ $height: 55px;
           left: -30px;
           transform: translate(0, 0);
           transition: all 0.6s ease;
-          fill: $white
+          fill: $white;
         }
 
         .lens {
@@ -64,12 +59,12 @@ $height: 55px;
           transform: translate(0, 0);
           fill: $white;
           transition: top 0.5s ease 0.1s, left 0.5s ease 0.1s, fill 0.3s ease;
-          fill:$fill
+          fill: $fill;
         }
       }
     }
   }
-  
+
   .symbol {
     height: 100%;
     width: 100%;
@@ -118,7 +113,7 @@ $height: 55px;
       height: 32px;
       transform: translate(-50%, -60%);
       transition: all 0.6s ease;
-      fill:$fill
+      fill: $fill;
     }
 
     .lens {
@@ -128,7 +123,7 @@ $height: 55px;
       top: 24px;
       left: 24px;
       transition: top 0.3s ease, left 0.3s ease, fill 0.2s ease 0.2s;
-      fill:$fill
+      fill: $fill;
     }
   }
 }
