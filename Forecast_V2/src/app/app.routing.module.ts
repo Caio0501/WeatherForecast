@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { ViewRouter } from './view/view.routes';
 
-import { ModelsRouter } from './models/models.routes';
 
 const AppRouter: Routes = [
   {
     path: '',
-    children: [...ModelsRouter]
+    children: [...ViewRouter]
   },
 ];
 
