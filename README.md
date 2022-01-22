@@ -40,14 +40,11 @@
     # Clone the repository
     $ https://github.com/Caio0501/WeatherForecast.git
 
-    # Enter the Forecast_V1 directory
-    $ cd ./Forecast_V1/
-
     # Install all the dependencies
     $ npm install
 
     # Start the application
-    $ npm start
+    $ npm run v1
 
   <div id="tecnologias_v1">
     <h3 align="center">Tecnologias utilizadas</h3>
