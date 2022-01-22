@@ -4,17 +4,23 @@
   <p align="center"> 
     <strong>
       Este repositório foi criado a partir da ideia de criar uma aplicação Web consumindo uma API fornecida pela OpenWeather
-      <a href="https://openweathermap.org">openweathermap.org</a> utilizando do framework Angular. Inicialmente a primeira versão projeto foi feita para uma entrevista de             emprego usando de um protótipo disponibilizado pela <a href="https://www.actionlabs.com.br/">www.actionlabs.com.br</a> mas com o passar do tem tive a vontade de recriar         esse projeto utilizando de um protótipo feito por min a fim de me aprofundar nos estudos 
+      <a href="https://openweathermap.org">openweathermap.org</a> utilizando do framework Angular.
     </strong> 
   </p>
   <p align="center"> 
-    <a href="#forecast_v1">Forecast V1</a> •
-    <a href="#forecast_v2">Forecast V2</a> 
+    <a href="#forecast_v1">V1</a> •
+    <a href="#forecast_v2">V2</a> 
   </p>
   <hr/>
 </header>
 <section>
-  <h2 id="forecast_v1" align="center">Forecast V1</h2>
+  <h2 id="forecast_v1" align="center">V1</h2>
+	 <p align="center"> 
+		<strong>
+			A v1 foi desenvolvida para uma entrevista de emprego na <a href="https://www.actionlabs.com.br/">www.actionlabs.com.br</a>  
+			que disponibilizou um protótipo que foi usado como base para o desenvolvimento.
+			</strong> 
+  	</p>
   <p align="center"> 
     <a href="#status_v1">Status do projeto</a> •
     <a href="#preview">Preview</a> •
@@ -49,13 +55,13 @@
   <div id="tecnologias_v1">
     <h3 align="center">Tecnologias utilizadas</h3>
     <ul>
-      <li>Angular 10</li>
+      <li>Angular 13</li>
       <li>Typescript</li>
     </ul>
   </div>
 </section>
 <section>
-  <h2 id="forecast_v2"align="center">Forecast V2</h2>
+  <h2 id="forecast_v2"align="center">V2</h2>
   <p align="center"> 
     <a href="#status_v2">Status do projeto</a> •
     <a href="#preview_v2">Preview</a> •
