@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { apiKey } from 'keys/api-key';
 import { Observable } from 'rxjs';
-import { apiKey } from '../../keys/api-key';
 import { Forecast } from '../interface/gerForecast';
 import { getFind } from '../interface/getFind';
 import { GetWeather } from '../interface/getWeather';

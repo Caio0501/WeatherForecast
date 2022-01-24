@@ -7,13 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-
-		"v1": "ng serve --port 4200 --open --project=v1",
+    "v1": "ng serve --port 4200 --open --project=v1",
     "v1-host": "ng serve --open --project=v1 --host 0.0.0.0 --port 4200 --disable-host-check",
-
-		"v2": "ng serve --port 4201 --open --project=v2",
+    "v2": "ng serve --port 4201 --open --project=v2",
     "v2-host": "ng serve --open --project=v2 --host 0.0.0.0 --port 4201 --disable-host-check"
-
   },
   "private": true,
   "dependencies": {
@@ -25,6 +22,7 @@
     "@angular/platform-browser": "~13.0.0",
     "@angular/platform-browser-dynamic": "~13.0.0",
     "@angular/router": "~13.0.0",
+    "bootstrap": "^5.1.3",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
