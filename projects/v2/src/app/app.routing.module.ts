@@ -6,8 +6,18 @@ import { ViewRouter } from './view/view.routes';
 const AppRouter: Routes = [
   {
     path: '',
-    children: [...ViewRouter]
-  },
+		children: [
+			{
+				path: '',
+				redirectTo: '/home',
+				pathMatch: 'full',
+			},
+			{
+				path: 'home',
+				loadChildren: () => import('./view/view.module').then((m) => m.ViewModule),
+			},
+		]
+	}
 ];
 
 @NgModule({

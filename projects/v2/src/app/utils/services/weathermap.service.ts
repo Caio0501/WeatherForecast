@@ -6,7 +6,7 @@ import { getFind } from '../interface/getFind';
 import { GetWeather } from '../interface/getWeather';
 
 @Injectable()
-export class WatherMapService {
+export class WeatherMapService {
   public apikey: string;
 
   constructor(private http: HttpClient) {
