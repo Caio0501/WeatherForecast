@@ -1,52 +1,50 @@
-import { ChangeDetectorRef, Component, Injector, Input, OnDestroy, OnInit } from '@angular/core';
-import { ControlValueAccessor, FormControl, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { Subject } from 'rxjs';
+import { Component, forwardRef, Input } from '@angular/core';
+import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
+const INPUT_FIELD_VALUE_ACCESSOR: any = {
+	provide: NG_VALUE_ACCESSOR,
+	useExisting: forwardRef(() => InputSearchComponent),
+	multi: true,
+}
 @Component({
 	selector: 'app-input-search',
 	templateUrl: './input-search.component.html',
 	styleUrls: ['./input-search.component.scss'],
-	providers: [
-		{
-			provide: NG_VALUE_ACCESSOR,
-			multi: true,
-			useExisting: InputSearchComponent
-		}
-	]
+	providers: [INPUT_FIELD_VALUE_ACCESSOR]
 })
-export class InputSearchComponent implements ControlValueAccessor, OnInit, OnDestroy {
+export class InputSearchComponent implements ControlValueAccessor {
 
 	@Input() placeholder: string = 'Search';
 	@Input() data: [];
+	@Input() isReadOnly = false;
 
-
-	public formControl = new FormControl(undefined);
-	public onChange!: (_value: any) => void;
-	public onTouched!: () => void;
-	public onDestroy = new Subject<void>()
-
-	constructor() {
-
+	private innerValue: any;
+	get value() {
+		return this.innerValue;
 	}
-	ngOnInit(): void {
-
+	set value(v: any) {
+		if (v != this.innerValue) {
+			this.innerValue = v;
+			this.onChangeCb(v)
+		}
 	}
 
-	ngOnDestroy(): void {
+	onChangeCb: (_: any) => void = () => { };
+	onTouchedCb: (_: any) => void = () => { };
 
-	}
-	
-	writeValue(obj: any): void {
-		throw new Error('Method not implemented.');
+	writeValue(v: any): void {
+		if (v != this.innerValue) {
+			this.value = v;
+		}
 	}
 	registerOnChange(fn: any): void {
-		throw new Error('Method not implemented.');
+		this.onChangeCb = fn
 	}
 	registerOnTouched(fn: any): void {
-		throw new Error('Method not implemented.');
+		this.onTouchedCb = fn;
 	}
 	setDisabledState?(isDisabled: boolean): void {
-		throw new Error('Method not implemented.');
+		this.isReadOnly = isDisabled;
 	}
 
 }

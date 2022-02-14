@@ -5,7 +5,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routing.module';
-import { ViewModule } from './view/view.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +15,6 @@ import { ViewModule } from './view/view.module';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ViewModule
   ],
   providers: [],
   bootstrap: [AppComponent]

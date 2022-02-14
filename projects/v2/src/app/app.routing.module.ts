@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ViewRouter } from './view/view.routes';
 
 
 const AppRouter: Routes = [
-  {
-    path: '',
+	{
+		path: '',
 		children: [
 			{
 				path: '',
@@ -14,15 +13,15 @@ const AppRouter: Routes = [
 			},
 			{
 				path: 'home',
-				loadChildren: () => import('./view/view.module').then((m) => m.ViewModule),
+				loadChildren: () => import('./modules/home/home.module').then((m) => m.HomeModule),
 			},
 		]
 	}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(AppRouter)],
-  exports: [RouterModule]
+	imports: [RouterModule.forRoot(AppRouter)],
+	exports: [RouterModule]
 })
 
 export class AppRoutingModule { }

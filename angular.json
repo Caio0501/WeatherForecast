@@ -138,6 +138,7 @@
             ],
             "styles": [
               "projects/v2/src/styles.scss",
+              "projects/v2/src/assets/styles/styles.scss",
 							"node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
